@@ -11,6 +11,7 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = os.environ.get(
+    'my-backend-mz1s.onrender.com',
     'ALLOWED_HOSTS',
     'localhost,127.0.0.1'
 ).split(',')
